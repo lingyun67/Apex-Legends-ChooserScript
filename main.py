@@ -43,7 +43,7 @@ while True:
         print("\033[1;37m使用抽取规则1：抽取1种武器类别。\033[0m")
     if random_numbers[1] == 2:
         print("\033[1;37m使用抽取规则2：在所有武器中抽取1-5个武器。\033[0m")
-    input("\033[1;37m按下回车以继续抽取武器 \033[0m")
+    input("按下回车以继续抽取武器")
 
     for player in range(3):
         print(f"\033[1;32m正在抽取玩家{player+1}的武器\033[0m")
@@ -51,7 +51,7 @@ while True:
         # 将数组的第二个数字作为参数传递给gun.py
         subprocess.run(["python", "gun.py", str(random_numbers[1])])
 
-    user_input = input("\033[1;37m按下回车以继续下一次抽选，退出输入exit \033[0m")
+    user_input = input("按下回车以继续下一次抽选，退出输入exit")
 
     if user_input.lower() == 'exit':
         break
