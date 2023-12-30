@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import colorama
+colorama.init(autoreset=True)
 import subprocess
 import random
 import time

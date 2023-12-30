@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import colorama
+colorama.init(autoreset=True)
 import sys
 
 # 检查是否有命令行参数传递
