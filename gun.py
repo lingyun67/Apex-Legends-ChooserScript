@@ -37,7 +37,7 @@ def rule1():
     return category, weapons[category]
 
 
-# 抽取规则2：在所有武器中抽取3-5个武器展示给用户，要求输出武器是什么种类的
+# 抽取规则2：在所有武器中抽取1-5个武器展示给用户，要求输出武器是什么种类的
 def rule2():
     num_selected = random.randint(1, 5)
     selected_weapons = random.sample([weapon for weapons_list in weapons.values() for weapon in weapons_list], num_selected)
@@ -67,6 +67,6 @@ elif rule_type == 2:
         print(f"\033[1;34m武器{i + 1}（{weapon_category}类）：{weapon}\033[0m")
         time.sleep(1)
 else:
-    print("\033[1;31m无效的选择，请输入 '1' 或 '2'.\033[0m")
+    print("\033[1;31m无效的选择，请输入 1 或 2.\033[0m")
 
 #print("\033[1;32m该玩家武器抽取程序结束。\033[0m")

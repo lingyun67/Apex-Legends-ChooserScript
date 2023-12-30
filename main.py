@@ -39,7 +39,7 @@ while True:
     if random_numbers[1] == 1:
         print("\033[1;37m使用抽取规则1：抽取1种武器类别。\033[0m")
     if random_numbers[1] == 2:
-        print("\033[1;37m使用抽取规则2：在所有武器中抽取3-5个武器。\033[0m")
+        print("\033[1;37m使用抽取规则2：在所有武器中抽取1-5个武器。\033[0m")
     input("\033[1;37m按下回车以继续抽取武器 \033[0m")
 
     for player in range(3):
